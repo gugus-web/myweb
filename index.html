@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ประวัติย่อ – ชื่อ นามสกุล</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&family=Noto+Serif+Thai:wght@500;700">
+<style>
+:root{
+  --page:#e9ebef; --sheet:#ffffff; --ink:#1c222b; --muted:#5b6573; --line:#dde1e7;
+  --navy:#14284b; --navy-ink:#f1f3f7; --navy-muted:#aab6cc; --navy-line:#2c4170; --gold:#b08d4f; --h:#14284b;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--page:#0e1115; --sheet:#181d24; --ink:#e6e9ee; --muted:#9aa4b2; --line:#2a313b; --navy:#0f1d38; --navy-line:#25375c; --gold:#c9a76a; --h:#c9d6ef;}
+}
+:root[data-theme="dark"]{--page:#0e1115; --sheet:#181d24; --ink:#e6e9ee; --muted:#9aa4b2; --line:#2a313b; --navy:#0f1d38; --navy-line:#25375c; --gold:#c9a76a; --h:#c9d6ef;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:"Sarabun","Noto Sans Thai",system-ui,sans-serif;font-size:16.5px;line-height:1.7}
+.sheet{max-width:920px;margin:40px auto;background:var(--sheet);display:grid;grid-template-columns:290px 1fr;box-shadow:0 2px 24px rgba(10,20,40,.18)}
+aside{background:var(--navy);color:var(--navy-ink);padding:40px 28px}
+.photo{width:170px;height:212px;margin:0 auto 32px;border:3px solid var(--gold);background:var(--navy-line);color:var(--navy-muted);overflow:hidden}
+.photo img,.photo svg{width:100%;height:100%;object-fit:cover;display:block}
+aside h2{font-family:"Noto Serif Thai","Sarabun",serif;font-size:1.05rem;font-weight:700;margin:0 0 .7rem;padding-bottom:.45rem;border-bottom:1px solid var(--gold);color:#fff}
+aside section{margin-bottom:2rem}
+aside ul{list-style:none;margin:0;padding:0;font-size:.95rem}
+aside li{padding:.35rem 0;border-bottom:1px solid var(--navy-line)}
+aside li:last-child{border-bottom:0}
+aside small{display:block;color:var(--navy-muted);font-size:.82rem;line-height:1.4}
+aside a{color:inherit;word-break:break-all}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+main{padding:48px 44px}
+header{padding-bottom:1.4rem;margin-bottom:2rem;border-bottom:3px double var(--gold)}
+h1{font-family:"Noto Serif Thai","Sarabun",serif;font-size:2.3rem;line-height:1.3;margin:0;font-weight:700;color:var(--h)}
+.role{margin:.3rem 0 0;font-size:1.15rem;color:var(--muted)}
+main h2{font-family:"Noto Serif Thai","Sarabun",serif;font-size:1.15rem;font-weight:700;color:var(--h);margin:0 0 1rem;padding-bottom:.4rem;border-bottom:1px solid var(--line)}
+main section{margin-bottom:2.2rem}
+main p{margin:0 0 .8rem}
+.item{margin-bottom:1.4rem;padding-left:1.1rem;border-left:2px solid var(--gold)}
+.item h3{margin:0;font-size:1.05rem;font-weight:600}
+.meta{color:var(--muted);font-size:.92rem;margin:.1rem 0 .4rem}
+.item p{margin:0;color:var(--ink)}
+@media (max-width:760px){
+  .sheet{grid-template-columns:1fr;margin:0}
+  main{padding:32px 22px}
+  aside{padding:32px 22px}
+  h1{font-size:1.9rem}
+}
+@media print{
+  body{background:#fff;font-size:12pt}
+  .sheet{margin:0;box-shadow:none;max-width:none}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
 </head>
 <body>
-    <h1>ธนวิชญ์</h1>
+<div class="sheet">
+  <aside>
+    
+    <div class="photo" role="img" aria-label="รูปถ่าย">
+      <img src="1.jpg" alt="">
+    </div>
+    <section>
+      <h2>ข้อมูลติดต่อ</h2>
+      <ul>
+        <li><small>อีเมล</small><a href="mailto:name@example.com">tanawitgus00@gmail.com</a></li>
+        <li><small>โทรศัพท์</small>081-786-5471</li>
+        <li><small>ที่อยู่</small>กระบี่</li>
+      </ul>
+    </section>
+    <section>
+      <h2>ทักษะ</h2>
+      <ul>
+        <li>พื้นฐาน github</li>
+        <li>พื้นฐาน html</li>
+        <li>พื้นฐาน php</li>
+        <li>พื้นฐาน phyton</li>
+        <li>พื้นฐาน c++</li>
+        
+      </ul>
+    </section>
+    <section>
+      <h2>ภาษา</h2>
+      <ul>
+        <li>ไทย<small>ภาษาแม่</small></li>
+        <li>อังกฤษ<small>ระดับปานกลาง</small></li>
+      </ul>
+    </section>
+  </aside>
+
+  <main>
+    <header>
+      <font style="font-size:35px;">ธนวิชญ์ คงน้อย(Tanawit Kongnoi)</font>
+      <p class="role">ตำแหน่งงานที่ต้องการ Network Engineer</p>
+    </header>
+
+    <section>
+      <h2>ข้อมูลโดยสรุป</h2>
+      <p>สรุปประสบการณ์ ความเชี่ยวชาญ และเป้าหมายในสายอาชีพ ความยาว 2–3 ประโยค</p>
+    </section>
+
+    <section>
+      <h2>ประสบการณ์ทำงาน</h2>
+      <p>-</p>
+    </section>
+
+    <section>
+      <h2>การศึกษา</h2>
+      <div class="item">
+        <h3>มัธยมศึกษาปีที่ 3</h3>
+        <div class="meta">โรงเรียนบ้านถ้ำโกบ</div>
+        
+      </div>
+      <div class="item">
+        <h3>ปวช.</h3>
+        <div class="meta">วิทยาลัยเทคนิคกระบี่</div>
+        
+      </div>
+    </section>
+
+    <section>
+      <h2>ใบรับรองและรางวัล</h2>
+      <div class="item">
+        <h3>หลักสูตร Microcontroller</h3>
+        <div class="meta">Coding Thailand</div>
+      </div>
+      <div class="item">
+       <h3>หลักสูตร AI&Data Analytics(Machine Leaning)</h3>
+        <div class="meta">Coding Thailand</div>
+      </div>
+      <div class="item">
+       <h3>หลักสูตร Engineering Fundamentals 1 (Eletronics)</h3>
+        <div class="meta">Coding Thailand</div>
+      </div>
+      <div class="item">
+       <h3>หลักสูตร Programing With c/c++</h3>
+        <div class="meta">Coding Thailand</div>
+      </div>
+      <div class="item">
+       <h3>หลักสูตร Phyton programing for AI & D</h3>
+        <div class="meta">Coding Thailand</div>
+      </div>
+    </section>
+  </main>
+</div>
 </body>
 </html>
